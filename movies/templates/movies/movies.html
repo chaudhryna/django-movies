@@ -10,8 +10,9 @@
   <h1>Movies</h1>
   {% for movie in movies %}
   <ul>
-    <li><strong>{{ movie.title }}</strong> - Released in {{ movie.year }}</li>
+    <li><a href="movies/{{movie.id}}"><strong>{{ movie.title }}</strong> - Released in {{ movie.year }}</a></li>
   </ul>
   {% endfor %}
+  <a href="/movies/add">Add a Movie</a>
 </body>
 </html>
